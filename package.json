@@ -1,25 +1,24 @@
 {
   "name": "ai-robots-api",
   "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "start:dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
   "dependencies": {
     "bcrypt-nodejs": "^0.0.3",
     "clarifai": "^2.9.1",
     "cors": "^2.8.5",
     "express": "^4.17.3",
-    "knex": "^1.0.4",
-    "pg": "^8.7.3",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "5.0.0"
-  },
-  "scripts": {
-    "start": "node server.js",
-    "start:dev": "nodemon server.js",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.15"
+    "knex": "^1.0.3",
+    "pg": "^8.7.3"
   }
 }
