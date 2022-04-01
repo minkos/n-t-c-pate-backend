@@ -12,18 +12,18 @@ const imageurl = require('./controllers/imageurl');
 const db = knex({
 	client: 'pg',
 	connection: {
-		// host: '127.0.0.1',
-		// port: 5432,
-		// user: 'postgres',
-		// password: 'cheeyuiming8128',
-		// database: 'ai_robots'
-
 		connectionString: process.env.DATABASE_URL,
 		ssl: {
 			rejectUnAuthorized: false
 		}
 	}
 })
+
+// host: '127.0.0.1',
+// port: 5432,
+// user: 'postgres',
+// password: 'cheeyuiming8128',
+// database: 'ai_robots'
 
 const app = express();
 app.use(express.json());
