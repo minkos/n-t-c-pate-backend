@@ -21,19 +21,9 @@ const db = knex({
 	}
 })
 
-// host: '127.0.0.1',
-// port: 5432,
-// user: 'postgres',
-// password: 'cheeyuiming8128',
-// database: 'ai_robots'
-
 const app = express();
 app.use(express.json());
 app.use(cors());
-
-// const app_ai = new Clarifai.App({
-// 	apiKey: '89069a13f71c4c8ba62da60be99d785d' 
-// })
 
 
 app.get('/', (req, res) => {
